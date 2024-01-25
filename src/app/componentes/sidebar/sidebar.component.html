@@ -1,0 +1,19 @@
+<div class="container-sidebar">
+
+    <div class="grupo-menu">
+        <div class="container-icone-menu">
+            <div class="caixa-menu caixa-menu-texto" (click)="selectMenu(1)"
+                [class]="{'caixa-menu-select': this.menuService.menuSelecionado == 1, '':this.menuService.menuSelecionado!= 1}">
+                Cliente
+            </div>
+        </div>
+    </div>
+
+    <div class="grupo-menu">
+        <div class="container-icone-menu">
+            <div class="caixa-menu caixa-menu-texto"
+            (click)="selectMenu(100)"  >Sair</div>
+        </div>
+    </div>
+
+</div>
